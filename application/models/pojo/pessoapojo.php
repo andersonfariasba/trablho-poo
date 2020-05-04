@@ -1,4 +1,5 @@
 <?php
+
 class PessoaPojo extends CI_Model {
 
     private $nome;
