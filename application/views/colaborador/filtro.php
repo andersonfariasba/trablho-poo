@@ -20,6 +20,7 @@
                 <th>NOME</th>
                 <th>CARGO</th>
                 <th>CPF</th>
+                <th>SALÁRIO</th>
                 <th>OPERAÇÕES</th>
               </tr>
             </thead>
@@ -36,6 +37,7 @@
                    ?></td>
                   
                   <td><?php echo $objColaborador->getCpf(); ?></td>
+                   <td>R$: <?php echo number_format($objColaborador->getSalario(), 2, ',', '.'); ?></td>
                    
           
                   <td class="td-actions">

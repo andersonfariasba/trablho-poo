@@ -5,6 +5,7 @@ class ColaboradorPojo extends CI_Model {
     private $id_cargo;
     private $nome;
     private $cpf;
+    private $salario;
 
     private $cargo; 
 
@@ -40,6 +41,14 @@ class ColaboradorPojo extends CI_Model {
         $this->cpf = $cpf;
     }
 
+    public function getSalario(){
+        return $this->salario;
+    }
+
+    public function setSalario($salario){
+        $this->salario = $salario;
+    }
+
     public function getCargo(){
         return $this->cargo;
     }
@@ -60,6 +69,9 @@ class ColaboradorPojo extends CI_Model {
 
         if(isset($dados["cpf"]))
             $this->cpf = $dados["cpf"];
+
+          if(isset($dados["salario"]))
+            $this->salario = $dados["salario"];
     }
 
 

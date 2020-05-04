@@ -81,6 +81,17 @@ Icons: http://vellore.com.br/templates/base/icons.html
 					</div>
 					<!-- Final Campos do Formuario -->
 
+					<!-- Campos do Formuario -->
+					<div class="form-group">
+
+						<div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+							<label>Salário</label>
+							<input type="text" class="form-control" tipo="moneyReal" name="salario" id="salario" value="<?php echo set_value('salario',$obj->getSalario())?>" />
+						</div>
+
+					</div>
+					<!-- Final Campos do Formuario -->
+
 				
 
 						<!-- Linha entre o final do arquivo e inicio do botão -->
