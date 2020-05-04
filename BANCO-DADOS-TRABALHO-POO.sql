@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 03/05/2020 às 23:09
+-- Tempo de geração: 04/05/2020 às 07:50
 -- Versão do servidor: 5.7.29-0ubuntu0.18.04.1
 -- Versão do PHP: 7.2.29-1+ubuntu18.04.1+deb.sury.org+1
 
@@ -69,16 +69,17 @@ CREATE TABLE `colaborador` (
   `id_colaborador` int(11) NOT NULL,
   `id_cargo` int(11) NOT NULL,
   `nome` varchar(45) DEFAULT NULL,
-  `cpf` varchar(45) DEFAULT NULL
+  `cpf` varchar(45) DEFAULT NULL,
+  `salario` decimal(7,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Fazendo dump de dados para tabela `colaborador`
 --
 
-INSERT INTO `colaborador` (`id_colaborador`, `id_cargo`, `nome`, `cpf`) VALUES
-(2, 2, 'ENZO', '74569853214'),
-(3, 1, 'GABRIEL', '54654654654546');
+INSERT INTO `colaborador` (`id_colaborador`, `id_cargo`, `nome`, `cpf`, `salario`) VALUES
+(2, 2, 'ENZO', '74569853214', '2300.00'),
+(3, 1, 'GABRIEL', '54654654654546', '1500.00');
 
 --
 -- Índices de tabelas apagadas
